@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RoomZy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="firebase_url">"https://roomzy-cbeb4-default-rtdb.firebaseio.com"</string>
+    <string name="default_web_client_id">YOUR_CLIENT_ID.apps.intercontinental.com</string>
+    <string-array name="category_array">
+        <item>Loại 1</item>
+        <item>Loại 2</item>
+        <item>Loại 3</item>
+        <item>Loại 4</item>
+        <item>Loại 5</item>
+    </string-array>
+</resources>

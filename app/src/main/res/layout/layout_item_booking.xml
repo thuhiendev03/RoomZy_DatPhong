@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <ImageView
+        android:id="@+id/ivRoomImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/ivRoomImage"
+        android:layout_marginStart="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tvCheckInDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:layout_toEndOf="@id/ivRoomImage"
+        android:layout_marginStart="16dp"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvCheckOutDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCheckInDate"
+        android:layout_toEndOf="@id/ivRoomImage"
+        android:layout_marginStart="16dp"
+        android:textSize="14sp"/>
+
+</RelativeLayout>

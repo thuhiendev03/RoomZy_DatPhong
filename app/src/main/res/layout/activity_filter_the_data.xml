@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".FilterTheDataActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/nestedScroll"
+        android:background="@color/White300">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lọc Sản Phẩm"
+                android:textSize="24sp"
+                android:textColor="@color/GlacierBlueColor"
+                android:fontFamily="@font/helvetica_bold"
+                android:gravity="center"
+                android:paddingBottom="16dp" />
+
+            <!-- Filter by Category -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lọc Theo Loại"
+                android:textSize="18sp"
+                android:textColor="@color/GlacierBlueColor"
+                android:fontFamily="@font/helvetica_bold"
+                android:paddingBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/categorySpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp"
+                android:spinnerMode="dropdown"
+                android:entries="@array/category_array" />
+
+            <!-- Filter by Price -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lọc Theo Giá"
+                android:textSize="18sp"
+                android:textColor="@color/GlacierBlueColor"
+                android:fontFamily="@font/helvetica_bold"
+                android:paddingBottom="8dp" />
+
+            <!-- Filter by Location -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <!-- Price Range Inputs -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/minPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:drawableStart="@drawable/ic_price_tag"
+                        android:hint="Giá Tối Thiểu"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="@color/GlacierBlueColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="-"
+                        android:textColor="@color/IceColor"
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/maxPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_bg"
+                        android:drawableStart="@drawable/ic_price_tag"
+                        android:hint="Giá Tối Đa"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textColor="@color/GlacierBlueColor" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lọc Theo Khu Vực"
+                android:textSize="18sp"
+                android:textColor="@color/GlacierBlueColor"
+                android:fontFamily="@font/helvetica_bold"
+                android:paddingBottom="8dp" />
+
+            <Spinner
+                android:id="@+id/locationSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/spinner_bg"
+                android:padding="10dp"
+                android:layout_marginBottom="16dp"
+                android:spinnerMode="dropdown" />
+
+            <!-- Sort Order -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sắp Xếp"
+                android:textSize="18sp"
+                android:textColor="@color/GlacierBlueColor"
+                android:fontFamily="@font/helvetica_bold"
+                android:paddingBottom="8dp" />
+
+            <RadioGroup
+                android:id="@+id/sortOrderGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+                <RadioButton
+                    android:id="@+id/sortNew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mới nhất"
+                    android:textColor="@color/GlacierBlueColor"
+                    android:fontFamily="@font/helvetica_neue"
+                    android:padding="10dp" />
+                <RadioButton
+                    android:id="@+id/sortAscending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giá Tăng Dần"
+                    android:textColor="@color/GlacierBlueColor"
+                    android:fontFamily="@font/helvetica_neue"
+                    android:padding="10dp" />
+
+                <RadioButton
+                    android:id="@+id/sortDescending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giá Giảm Dần"
+                    android:textColor="@color/GlacierBlueColor"
+                    android:fontFamily="@font/helvetica_neue"
+                    android:padding="10dp" />
+            </RadioGroup>
+
+            <!-- Apply Filters and Clear Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/applyFiltersButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Áp Dụng"
+                    android:background="@drawable/button_bg"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:padding="16dp"
+                    android:layout_marginEnd="8dp"/>
+
+                <Button
+                    android:id="@+id/clearFiltersButton"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Xóa"
+                    android:background="@drawable/button_bg"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/helvetica_bold"
+                    android:padding="16dp"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

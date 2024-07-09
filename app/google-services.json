@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "75785787585",
+    "project_id": "roomzy-cbeb4",
+    "storage_bucket": "roomzy-cbeb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:75785787585:android:be333d8b5856a7f7e39c40",
+        "android_client_info": {
+          "package_name": "com.app.roomzy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQT_-rdUsg7CNneQsVoVxHxsIp17OR2LQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
