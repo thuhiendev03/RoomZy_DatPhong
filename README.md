@@ -1,9 +1,9 @@
 # RoomZy
  Phần mềm đặt phòng khách sạn và Resort Java Android
- # 🏆 Certificates
+ # 🏆 Image Application 
 >
-> <a href="./Certificate/1.jpg">
->    <img height="100px" width="150px" src="./Certificate/1.jpg" alt=""/>
+> <a href="./Image/ChiTietPhong.png">
+>    <img height="100px" width="150px" src="./Image/ChiTietPhong.png" alt=""/>
 > </a>
 > <a href="./Certificate/2.jpg">
 >    <img height="100px" width="150px" src="./Certificate/2.jpg" alt=""/>
