@@ -4,15 +4,15 @@
 <a href="./Image/ChiTietPhong.png">
 >    <img height="300px" width="150px" src="./Image/ChiTietPhong.png" alt=""/>
 > </a>
-> <a href="./Image/ChiTietPhong_KeoTha.png">
+<a href="./Image/ChiTietPhong_KeoTha.png">
 >    <img height="300px" width="150px" src="./Image/ChiTietPhong_KeoTha.png" alt=""/>
-> </a>
->  <a href="./Image/DangKi.png">
+</a>
+<a href="./Image/DangKi.png">
 >    <img height="300px" width="150px" src="./Image/DangKi.png" alt=""/>
-> </a>
->  <a href="./Image/DangNhap.png">
+</a>
+<a href="./Image/DangNhap.png">
 >    <img height="300px" width="150px" src="./Image/DangNhap.png" alt=""/>
-> </a>
+</a>
 <a href="./Image/DanhSachTatCa.png">
 >    <img height="300px" width="150px" src="./Image/DanhSachTatCa.png" alt=""/>
 > </a>
